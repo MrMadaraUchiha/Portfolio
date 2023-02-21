@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap%27');
+
+:root {
+    --text-color: #FFFFFF;
+    --navbar-color: #6813A5;
+    --content-color: #b062e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body, main {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--content-color);
+}
+
+
+.nav-container {
+    color: var(--text-color);
+    background-color: var(--navbar-color);
+    display: inline-block;
+    width: 100vw;
+    /* border-radius:0 0 10px 10px; */
+    box-shadow: 0 0 10px 10px #000000;
+}
+
+.nav-container::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background-color: rgb(148, 74, 216);
+    /* background: linear-gradient(90deg, rgba(163,95,213,1) 1%, rgba(128,60,177,1) 61%, rgba(70,14,111,1) 100%); */
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+} /*fixing navbar*/
+
+.nav-lista  {
+    display: flex; 
+    justify-content: space-around;
+    margin: 25px;
+    font-size: 32px;
+}
+
+li > a {
+    color: var(--text-color);
+}
+
+li > a:hover {
+    cursor: pointer;
+    color: aquamarine;
+    font-size: 36px;
+
+}
+
+/* Conteudo Principal */
+
+/* Introdução */
+
+.banner {
+margin: 104px 120px;
+display: flex;
+border: 10px solid black;
+justify-content: space-around;
+/* background-color: red; */
+}
+
+.intro {
+    margin: 50px;
+    background-color: red;
+}
+
+#title-w {
+    font-size: 40px;
+}
+
+#subtitle-w {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0000009b;
+}
+
+#intro-profile-image {
+    width: 30%;
+    margin-left: 80px;
+    border-radius: 100%;
+}
+
+/* About */
+
+.about {
+    display: flex;
+    justify-content: center;
+}
